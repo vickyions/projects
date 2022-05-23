@@ -1,0 +1,46 @@
+main {
+  margin: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+article {
+  margin: auto;
+  text-align: center;
+}
+
+p {
+    margin: auto;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+#intro {
+    width: 75%;
+}
+
+
+figure {
+  text-align: center;
+}
+
+section {
+  margin: auto;
+  width: 60%;
+}
+
+.timelinehead {
+  color: red;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: dashed;
+  border-bottom: solid;
+  border-top-color: blue;
+  border-bottom-color: blueviolet;
+  border-width: 9px;
+}
