@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta author="Vicky Soni" />
+    <meta title="Survey Form" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Big Brother Survey form</h1>
+      <p id="description">
+        Its 1984 and Big Brother is watching you, tell him what he asks.
+      </p>
+    </header>
+    <main>
+      <fieldset>
+        <legend>every minute detail</legend>
+        <form id="survey-form" action="" method="push" autocomplete>
+          <div class="formfield">
+            <label for="name" id="name-label">Provided Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              autofocus
+              required
+            />
+          </div>
+          <div class="formfield">
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="bigbro_1984@hate.oceania"
+              required
+            />
+          </div>
+          <div class="formfield">
+            <label for="number" id="number-label">Age:</label>
+            <input
+              type="number"
+              max="150"
+              min="1"
+              id="number"
+              name="age"
+              placeholder="Age"
+            />
+          </div>
+          <div class="formfield">
+            <label for="dropdown">Terms you have heard before?</label>
+            <select id="dropdown" name="known-terms" size="3" multiple required>
+              <option disabled>
+                Select the terms you have heard around you
+              </option>
+              <optgroup label="Must know already">
+                <option value="oceania" selected>Oceania</option>
+                <option value="bigbrother" selected>Big Brother</option>
+              </optgroup>
+              <optgroup label="General Terms">
+                <option value="newspeak">Newspeak</option>
+                <option value="crimethink">Crimethink</option>
+                <option value="thoughtcrime">Thoughtcrime</option>
+                <option value="doublethink">Doublethink</option>
+              </optgroup>
+              <optgroup label="Ministries">
+                <option value="ministryofpeace">Ministry of Peace</option>
+                <option value="ministryofplenty">Ministry of Plenty</option>
+                <option value="ministryoftruth">Ministry of Truth</option>
+                <option value="ministryoflove">Ministry of Love</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="formfield">
+            <fieldset class="radiofield">
+              <legend>Choose your favourite ministry:</legend>
+              <input
+                type="radio"
+                id="mintruth"
+                name="favministry"
+                value="mintruth"
+              />
+              <label for="mintruth">Ministry of Truth</label>
+              <br />
+              <input
+                type="radio"
+                id="minpeace"
+                name="favministry"
+                value="minpeace"
+              />
+              <label for="minpeace">Ministry of Peace</label>
+              <br />
+              <input
+                type="radio"
+                id="minlove"
+                name="favministry"
+                value="minlove"
+                checked
+              />
+              <label for="minlove">Ministry of Love</label>
+              <br />
+              <input
+                type="radio"
+                id="minplenty"
+                name="favministry"
+                value="minplenty"
+              />
+              <label for="minplenty">Ministry of plenty</label>
+              <br />
+              <input
+                type="radio"
+                id="minoceania"
+                name="favministry"
+                value="run_now"
+              />
+              <label for="minoceania">Ministries of Oceania</label>
+            </fieldset>
+          </div>
+          <div class="formfield">
+            <fieldset class="checkfield">
+              <legend>
+                Books you have read?
+                <span class="clue">(Select the ones that apply)</span>
+              </legend>
+              <input
+                type="checkbox"
+                id="bhagvadgita"
+                name="books"
+                value="bhagvad_gita"
+                checked
+              />
+              <label for="bhagvadgita">Bhagavad Gita</label>
+              <br />
+              <input type="checkbox" id="bible" name="books" value="bible" />
+              <label for="bible">Bible</label>
+              <br />
+              <input type="checkbox" id="quran" name="books" value="quran" />
+              <label for="quran">Quran</label>
+              <br />
+              <input
+                type="checkbox"
+                id="checknone"
+                name="books"
+                value="smartlad"
+              />
+              <label for="checknone">None of them</label>
+            </fieldset>
+          </div>
+          <div class="formfield">
+            <label for="intel">Provide intel to Ministry of Truth:</label>
+            <textarea
+              id="intel"
+              form="survey-form"
+              placeholder="Input intels..."
+              rows="4"
+              cols="40"
+              wrap="soft"
+              spellcheck="true"
+            ></textarea>
+          </div>
+          <div class="formfield">
+            <button id="submit" type="submit" form="survey-form">Submit</button>
+          </div>
+        </form>
+      </fieldset>
+    </main>
+  </body>
+</html>
