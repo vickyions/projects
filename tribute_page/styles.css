@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right bottom,#ff9933,#FFFFFF, #138808)
+  background: linear-gradient(to right bottom, #ff9933, #ffffff, #138808);
 }
 
 #main {
@@ -9,7 +9,10 @@ body {
   font-family: Ubuntu, sans-serif;
 }
 
-header, figure, #timelinehead, #resource {
+header,
+figure,
+#timelinehead,
+#resource {
   text-align: center;
 }
 
@@ -18,7 +21,7 @@ header, figure, #timelinehead, #resource {
 }
 
 #image {
-  max-width: 220px;
+  max-width: 100%;
   min-width: 60px;
   width: 50%;
   height: auto;
@@ -56,9 +59,14 @@ a:visited {
 }
 
 h1 {
-  font-family: 'Times New Roman', sans-serif;
+  font-family: "Times New Roman", sans-serif;
 }
 
 #resource {
   margin-top: 50px;
+}
+
+img {
+  display: block;
+  margin: auto;
 }
