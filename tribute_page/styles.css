@@ -62,9 +62,3 @@ h1 {
 #resource {
   margin-top: 50px;
 }
-
-#float {
- float: right;
- margin: -20px 0px -10px 20px;
- max-width: 220px;
-}
