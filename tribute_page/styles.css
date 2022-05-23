@@ -1,46 +1,70 @@
-main {
-  margin: 10px;
+body {
+  background: linear-gradient(to right bottom,#ff9933,#FFFFFF, #138808)
 }
 
-header {
-  text-align: center;
-}
-
-article {
+#main {
   margin: auto;
+  width: 70%;
+  line-height: 1.6;
+  font-family: Ubuntu, sans-serif;
+}
+
+header, figure, #timelinehead, #resource {
   text-align: center;
+}
+
+#img-div {
+  text-align: center;
+}
+
+#image {
+  max-width: 220px;
+  min-width: 60px;
+  width: 50%;
+  height: auto;
+  border: 2px solid #138808;
+  border-radius: 5px;
+  box-shadow: 5px 3px 2px 0px #ff9933;
+}
+
+#img-caption {
+  text-shadow: 5px 3px 2px #ff9933;
 }
 
 p {
-    margin: auto;
   text-align: justify;
-  line-height: 1.6;
 }
 
-#intro {
-    width: 75%;
+h2 {
+  color: #303030;
+  border-bottom: 3px solid #138808;
+  margin: 5px 140px 3px 140px;
 }
 
-
-figure {
-  text-align: center;
+a {
+  color: revert;
+  text-decoration: none;
 }
 
-section {
+a:visited {
+  color: #ff9933;
+}
+
+#tribute-info {
   margin: auto;
-  width: 60%;
+  width: 90%;
 }
 
-.timelinehead {
-  color: red;
-  text-align: center;
+h1 {
+  font-family: 'Times New Roman', sans-serif;
 }
 
-hr {
-  border: none;
-  border-top: dashed;
-  border-bottom: solid;
-  border-top-color: blue;
-  border-bottom-color: blueviolet;
-  border-width: 9px;
+#resource {
+  margin-top: 50px;
+}
+
+#float {
+ float: right;
+ margin: -20px 0px -10px 20px;
+ max-width: 220px;
 }
