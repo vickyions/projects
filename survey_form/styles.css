@@ -1,0 +1,32 @@
+/*input {*/
+/*width: 100%;*/
+/*}*/
+
+/*label {*/
+/*display: block;*/
+/*}*/
+
+.formfield {
+  border: solid 1.5px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.formfield:hover {
+  animation: 100ms ease-out scale forwards;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.017);
+    box-shadow: 2px 2px 2px 3px grey;
+  }
+}
