@@ -7,8 +7,8 @@
 /*}*/
 
 .formfield {
-  border: solid 1.5px black;
-  border-radius: 10px;
+  border: solid 2px black;
+  border-radius: 5px;
   margin: 10px;
   padding: 10px;
   display: flex;
@@ -19,6 +19,41 @@
 .formfield:hover {
   animation: 100ms ease-out scale forwards;
 }
+
+.formfield label, .formfield input {
+  margin: 5px 2px 5px 2px;
+}
+
+
+.formfield input {
+  height: 30px;
+}
+
+.radiofield label, .checkfield label {
+  position: relative;
+  top: -8px;
+}
+
+#description {
+  
+}
+
+@media (min-width: 500px) {
+  body {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%
+  }
+}
+ @media (max-width:500px) {
+  body {
+    width: 100%;
+    margin:auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+ }
 
 @keyframes scale {
   from {
